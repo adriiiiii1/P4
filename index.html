@@ -18,14 +18,14 @@
 <body>
     <div class="main-container">
         <header>
-            <nav class="header">        
-                <div class="logo-container">
-                <a href="index.html" class="lien-icone">
+            <nav class="navbar">        
+                <div class="navbar__logo">
+                <a href="index.html" class="navbar__lienlogo">
                     <img class="logo" src="Images+et+textes+Ohmyfood/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
                 </a>
                 </div>
-                <div class="location">       
-                    <p class="ville"><i class="fa-solid fa-location-dot" id="location-icon"></i>Paris,Belleville</p>
+                <div class="navbar__location">       
+                    <p class="navbar__ville"><i class="fa-solid fa-location-dot" id="location-icon"></i>Paris, Belleville</p>
                 </div>
             </nav>
         </header> 
@@ -34,11 +34,11 @@
         <main>
             <section class="presentation">
                 <div>
-                    <h1>Réservez le menu qui vous convient</h1>
-                    <p class="text-presentation">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+                    <h1 class="presentation__title">Réservez le menu qui vous convient</h1>
+                    <p class="presentation__text">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
                 </div>
                  <div>
-                    <a href="#contact" class="button-presentation">Explorer nos restaurants</a>
+                    <a href="#contact" class="presentation__button">Explorer nos restaurants</a>
                 </div> 
             </section>
 
@@ -64,20 +64,20 @@
 
 
 
-            <section class="Restaurants">
-                    <div class="hebergements-title">
-                        <h2 class="section-title">Hébergements à Marseilleeeeeeeeee</h2>
+            <section class="restaurants">
+                    <div class="restaurants__div">
+                        <h2 class="restaurants__title">Restaurants</h2>
                     </div>
-                    <div class="hebergements-cards">
+                    <div class="restaurants__cards">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg" alt="Image plat La palette du goût">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">La palette du goût</h3>
-                                        <p class="card-subtitle">Ménilmontant</p>
+                                <div class="card__content">
+                                    <div class="card_text">
+                                        <h3 class="card__title">La palette du goût</h3>
+                                        <p class="card__subtitle">Ménilmontant</p>
                                     </div>
-                                    <div class="card-like">
+                                    <div class="card__like">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     </div>
                                 </div>
@@ -86,12 +86,12 @@
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image plat La note enchantée">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">La note enchantée</h3>
-                                        <p class="card-subtitle">Charonne</p>
+                                <div class="card__content">
+                                    <div class="card_text">
+                                        <h3 class="card__title">La note enchantée</h3>
+                                        <p class="card__subtitle">Charonne</p>
                                     </div>
-                                    <div class="card-like">
+                                    <div class="card__like">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     </div>
                                 </div>
@@ -100,12 +100,12 @@
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/reisetopia.jpg" alt="Image plat À la française">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">À la française</h3>
-                                        <p class="card-subtitle">Cité Rouge</p>
+                                <div class="card__content">
+                                    <div class="card_text">
+                                        <h3 class="card__title">À la française</h3>
+                                        <p class="card__subtitle">Cité Rouge</p>
                                     </div>
-                                    <div class="card-like">
+                                    <div class="card__like">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     </div>
                                 </div>
@@ -114,12 +114,12 @@
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/annie-spratt.jpg" alt="Image plat Le délice des sens">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Le délice des sens</h3>
-                                        <p class="card-subtitle">Folie-Méricourt</p>
+                                <div class="card__content">
+                                    <div class="card_text">
+                                        <h3 class="card__title">Le délice des sens</h3>
+                                        <p class="card__subtitle">Folie-Méricourt</p>
                                     </div>
-                                    <div class="card-like">
+                                    <div class="card__like">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     </div>
                                 </div>
@@ -131,16 +131,16 @@
 
 
         <footer>
-            <div class="directionRow">
-                <a href="index.html" class="logo-footer">
+            <div class="footer">
+                <a href="index.html" class="footer__logo">
                     <img class="logo" src="Images+et+textes+Ohmyfood/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
                 </a>
                 <ul>
                      <li>
-                        <a href="index.html"><i class="fa-solid fa-money-bill-wave fa-lg"></i>Proposer un restaurant</a>
+                        <a href="index.html"><i class="fa-solid fa-utensils" class="icon__utensils"></i>Proposer un restaurant</a>
                     </li>
                     <li>
-                        <a href="index.html"><i class="fa-solid fa-money-bill-wave fa-lg"></i>Devenir partenaire</a>
+                        <a href="index.html"><i class="fa-solid fa-handshake-angle" class="icon__hand"></i>Devenir partenaire</a>
                     </li>
                     <li>
                         <a href="index.html">Mentions légales</a>
