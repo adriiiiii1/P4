@@ -14,6 +14,12 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -68,40 +74,26 @@ a {
 /****** Image Menu ********/
 .image__menu img {
   width: 100%;
-  height: 200px;
+  height: 230px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 /****** Menus ********/
-.fonctionnement {
+.menu {
   background-color: #F6F6F6;
-  margin-top: 20px;
   margin-bottom: 50px;
   padding: 2px 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-.fonctionnement__title {
-  margin-bottom: 30px;
-}
-.fonctionnement__button {
-  height: 50px;
-  margin: 7px;
-  padding: 11px 17px 11px 17px;
+.menu__content {
+  padding: 1px 17px 1px 17px;
   border-radius: 20px;
   font-weight: bold;
   background-color: #F6F6F6;
   box-shadow: 0px 6px 15px -1px rgba(0, 0, 0, 0.2);
-  text-align: center;
   margin-bottom: 25px;
-}
-.fonctionnement__button1 i, .fonctionnement__button2 i {
-  color: #7e7e7e;
-}
-.fonctionnement__button3 i {
-  color: #9356DC;
-}
-.fonctionnement i {
-  padding-right: 10px;
 }
 
 .button__commander {
