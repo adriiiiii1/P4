@@ -9,9 +9,7 @@ body {
 }
 
 h1 {
-  font-family: "Roboto";
   font-size: 24px;
-  font-weight: bold;
 }
 
 a {
@@ -49,7 +47,6 @@ a {
 }
 .navbar__location .navbar__ville {
   font-size: 16px;
-  font-weight: bold;
 }
 .navbar__location .navbar__ville i {
   margin-right: 15px;
@@ -58,12 +55,12 @@ a {
 /****** Presentation ********/
 .presentation {
   background-color: #F6F6F6;
-  padding: 25px 35px 60px 35px;
+  padding: 25px 35px 70px 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 30px;
+  gap: 25px;
 }
 .presentation__title {
   margin: 15px;
@@ -71,7 +68,6 @@ a {
 }
 .presentation__title__text {
   font-size: 18px;
-  margin-bottom: 50px;
 }
 .presentation__button {
   color: white;
@@ -80,7 +76,6 @@ a {
   border-radius: 50px;
   padding: 15px 20px;
   width: 100%;
-  font-weight: bold;
 }
 
 /****** Fonctionnement ********/
@@ -89,7 +84,7 @@ a {
   padding: 2px 15px;
 }
 .fonctionnement__title {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .fonctionnement__button {
   display: flex;
@@ -143,7 +138,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 20px;
+  gap: 16px;
 }
 .restaurants__card {
   background-color: white;
@@ -159,6 +154,20 @@ a {
   border-top-right-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.restaurants .card__pastille {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 14px;
+  margin-top: 16px;
+  position: absolute;
+  right: 28px;
+  border-radius: 3px;
 }
 .restaurants .card__content {
   width: 100%;
@@ -187,20 +196,13 @@ a {
 /****** Footer ********/
 .footer {
   background-color: #353535;
-  padding: 10px 20px 15px 30px;
+  padding: 10px 20px 15px 25px;
   color: white;
 }
-.footer .footer__logo {
-  width: 100%;
-}
-.footer .footer__logo .logo {
-  color: white;
-  height: 20px;
-  margin-top: 18px;
-  margin-bottom: 7px;
-}
-.footer img {
-  color: white;
+.footer__title {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  padding: 11px 0px 18px 0px;
 }
 .footer ul {
   list-style-type: none;
@@ -216,4 +218,5 @@ a {
 }
 .footer ul li i {
   padding-right: 10px;
+  width: 20px;
 }/*# sourceMappingURL=style.css.map */
