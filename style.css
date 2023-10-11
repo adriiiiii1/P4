@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /****** General ***********/
 * {
   font-family: "Roboto";
@@ -96,7 +97,7 @@ a {
   background-color: #F6F6F6;
   box-shadow: 0px 5px 13px -4px rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
-  margin-left: 15px;
+  margin-left: 10px;
   position: relative;
 }
 .fonctionnement__button i {
@@ -124,6 +125,26 @@ a {
   left: -10px;
 }
 
+@media (min-width: 1024px) {
+  .fonctionnement__title {
+    margin-bottom: 0px;
+  }
+  .fonctionnement a {
+    padding-right: 50px;
+  }
+  .fonctionnement .fonctionnement__classe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+  .fonctionnement .fonctionnement__classe__button {
+    width: 100%;
+    height: 70px;
+    margin: 7px;
+    padding-right: 20px;
+  }
+}
 /****** Restaurants ********/
 .restaurants {
   margin-top: 45px;
@@ -192,11 +213,52 @@ a {
 .restaurants .card__content .card__like {
   margin-right: 20px;
 }
+.restaurants .card__content .card__like__link {
+  pointer-events: none;
+}
 
+/* Hide the checkbox input */
+.heart-checkbox {
+  display: none;
+}
+
+/* Style the label as a button */
+.heart-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* When the checkbox is checked, change the heart icon to a gradient color */
+.heart-checkbox:checked + .heart-label i {
+  color: transparent;
+  background: linear-gradient(135deg, #9556dc, #FF79DA); /* Gradient background */
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: color 0.3s ease, background 0.3s ease; /* Added color and background transition */
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .restaurants .restaurants__cards {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
+    gap: 20px; /* Espacement entre les cartes */
+  }
+  .restaurants .restaurants__card {
+    width: 70%; /* La largeur des cartes occupe la moitié de la grille */
+  }
+  .restaurants .restaurants__card img {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 /****** Footer ********/
 .footer {
   background-color: #353535;
-  padding: 10px 20px 15px 25px;
+  padding: 15px 20px 15px 30px;
   color: white;
 }
 .footer__title {
