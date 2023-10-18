@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +15,18 @@
     <link rel="icon" type="image/svg+xml" href="Images+et+textes+Ohmyfood/images/logo/ohmyfood@2x.svg">
 </head>
 <body>
+    <div class="loading">
+        <div class="loading__text">Loading</div>
+        <div class="loading__spinner"></div>
+        <div class="bounce__dots">
+            <div class="bounce__dots__dot">
+            </div>
+            <div class="bounce__dots__dot">
+            </div>
+            <div class="bounce__dots__dot">
+            </div>
+        </div>
+    </div>
     <div class="main-container">
         <header>
             <nav class="navbar">        
@@ -36,7 +47,7 @@
                     <p class="presentation__text">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
                 </div>
                  <div>
-                    <a href="#contact" class="presentation__button">Explorer nos restaurants</a>
+                    <a href="#contact" class="presentation__button">Explorer nos restaurants<div class="presentation__button__filtre"></div></a>
                 </div> 
             </section>
             <section class="fonctionnement">
@@ -72,8 +83,9 @@
                                         <h3 class="card__title">La palette du goût</h3>
                                         <p class="card__subtitle">Ménilmontant</p>
                                     </div>
-                                    <div class="card__like">
-                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    <div class="card__like" onclick="event.preventDefault();">
+                                        <i class="card__like2 fa-regular fa-heart fa-xl"></i>
+                                        <i class="card__like1 fa-regular fa-heart fa-xl"></i>
                                     </div>
                                 </div>
                             </article>
@@ -87,8 +99,9 @@
                                         <h3 class="card__title">La note enchantée</h3>
                                         <p class="card__subtitle">Charonne</p>
                                     </div>
-                                    <div class="card__like">
-                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    <div class="card__like" onclick="event.preventDefault();">
+                                        <i class="card__like2 fa-regular fa-heart fa-xl"></i>
+                                        <i class="card__like1 fa-regular fa-heart fa-xl"></i>
                                     </div>
                                 </div>
                             </article>
@@ -101,8 +114,9 @@
                                         <h3 class="card__title">À la française</h3>
                                         <p class="card__subtitle">Cité Rouge</p>
                                     </div>
-                                    <div class="card__like">
-                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    <div class="card__like" onclick="event.preventDefault();">
+                                        <i class="card__like2 fa-regular fa-heart fa-xl"></i>
+                                        <i class="card__like1 fa-regular fa-heart fa-xl"></i>
                                     </div>
                                 </div>
                             </article>
@@ -115,8 +129,9 @@
                                         <h3 class="card__title">Le délice des sens</h3>
                                         <p class="card__subtitle">Folie-Méricourt</p>
                                     </div>
-                                    <div class="card__like">
-                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    <div class="card__like" onclick="event.preventDefault();">
+                                        <i class="card__like2 fa-regular fa-heart fa-xl"></i>
+                                        <i class="card__like1 fa-regular fa-heart fa-xl"></i>
                                     </div>
                                 </div>
                             </article>
@@ -131,16 +146,16 @@
                 </div>
                 <ul>
                      <li>
-                        <a href="index.html"><i class="fa-solid fa-utensils" class="icon__utensils"></i>Proposer un restaurant</a>
+                        <a href="index.html"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
                     </li>
                     <li>
-                        <a href="index.html"><i class="fa-solid fa-handshake-angle" class="icon__hand"></i>Devenir partenaire</a>
+                        <a href="index.html"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
                     </li>
                     <li>
                         <a href="index.html">Mentions légales</a>
                     </li>
                     <li>
-                        <a href="index.html">Contact</a>
+                        <a href="mailto:ohmyfood@gmail.com">Contact</a>
                     </li>
                 </ul>
             </div>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,22 +17,25 @@
 <body>
     <div class="main-container">
         <header>
-        <section class="navbar">
+        <div class="navbar">
             <a href="index.html" class="navbar__lienback">
                 <i class="fa-solid fa-arrow-left fa-xl"></i>
             </a>             
             <div>
                 <img class="navbar__logo" src="Images+et+textes+Ohmyfood/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
             </div>
-        </section> 
+        </div> 
         </header>
         <main>
-            <section class="image__menu">
+            <div class="image__menu">
                     <img src="./Images+et+textes+Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image plat La palette du goût">
-            </section>
+            </div>
             <section class="menu">
                 <div>
-                    <h1 class="menu__title">La palette du goût<i class="fa-regular fa-heart"></i></h1>       
+                    <h1 class="menu__title">La palette du goût
+                            <i class="card__like card__like2 fa-regular fa-heart fa-sm"></i>
+                            <i class="card__like card__like1 fa-regular fa-heart fa-sm"></i>
+                    </h1>       
                 </div>
                  <div class="entrees">
                     <div class="menu__type">
@@ -48,6 +50,7 @@
                         <div class="menu__price">
                         <span class="euro">25€</span>
                         </div>
+                        <span class="check__button"></span>   
                     </div>
                     <div class="menu__content">
                         <div class="menu__txt">
@@ -111,9 +114,8 @@
                     </div>
                 </div> 
                  <div class="button">
-                    <a href="#contact" class="button__commander">Commander</a>
+                    <a href="#contact" class="button__commander">Commander<div class="button__commander__filtre"></div></a>
                 </div> 
-
             </section>
         </main>
         <footer>
@@ -123,16 +125,16 @@
                 </div>
                 <ul>
                      <li>
-                        <a href="index.html"><i class="fa-solid fa-utensils" class="icon__utensils"></i>Proposer un restaurant</a>
+                        <a href="index.html"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
                     </li>
                     <li>
-                        <a href="index.html"><i class="fa-solid fa-handshake-angle" class="icon__hand"></i>Devenir partenaire</a>
+                        <a href="index.html"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
                     </li>
                     <li>
                         <a href="index.html">Mentions légales</a>
                     </li>
                     <li>
-                        <a href="index.html">Contact</a>
+                        <a href="mailto:ohmyfood@gmail.com">Contact</a>
                     </li>
                 </ul>
             </div>
