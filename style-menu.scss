@@ -1,9 +1,6 @@
 
 $font-text: 'Roboto';
 $font-titre: 'Shrikhand';
-$primaire: #9356DC;
-$secondaire: #FF79DA;
-$tertiaire: #99E2D0;
 
 
 /****** General ***********/
@@ -45,9 +42,9 @@ a {
     }
     &__logo{
             width: 100%;
-            height: 32px;
-            margin-top: 25px;
-            margin-bottom: 12px;  
+            height: 30px;
+            margin-top: 20px;
+            margin-bottom: 10px;  
     }
  }
 
@@ -67,29 +64,41 @@ a {
     background-color: #F6F6F6;
     padding: 2px 15px 40px 15px;
     border-radius: 40px 40px 0px 0px;
+    &__title_top{
+        padding-right: 0px;
+        margin-right: 0px;
+    }
     .card__like{
         margin-left: 0px;
-    }
-    .card__like1{
-        display: inline;
-        margin-right: 0px;
-        font-weight: bold;
-        opacity: 0; 
-        transition: opacity 0.3s ease; 
-        background: linear-gradient(to bottom, #9356DC 10%, #FF79DA 80%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .card__like2 {
         position: relative;
-        right: -30px;
-    }
-    .card__like1:hover {
-        opacity: 1;
-    }
-    .card__like2:hover {
-        opacity: 0;
+        .card__like1{
+            display: inline;
+            margin-right: 20px;
+            font-weight: bold;
+            opacity: 1;
+            background: linear-gradient(to bottom, #9356DC 10%, #FF79DA 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index: -2;
+        }
+        .card__like2 {
+            margin-left: -10px;
+            position: relative;
+            left: 31px;
+            z-index: 2;
+            width: 24px;
+            height: 24px;                
+            transition: opacity 0.3s ease;
+            background-color: #F6F6F6;
+            &::before,&::after{
+                background-color:  #F6F6F6;
+            }
+        }
+
+        .card__like2:hover {
+            opacity: 0;
+        }
     }
     h2{
         margin-top: 50px;
@@ -103,40 +112,61 @@ a {
         margin-bottom: 35px;
     }
     &__content{
-        padding: 1px 17px 1px 17px;
         border-radius: 20px;
-        background-color:#F6F6F6;
+        background-color:#ffffff;
         box-shadow: 0px 5px 13px -4px rgba(0,0,0,0.2);
         margin-bottom: 25px; 
         display: flex;
-        align-items:flex-end;
-        justify-content: space-between;
-    }
-    &__title{
-        margin-top: 30px;
-        margin-left: 0px;
-    }
-    &__subtitle{
-        margin-top: 5px;
-    }
-    &__price{
-        margin-bottom: 17px;
-        margin-right: 0px;
-        font-weight: 700;
-        background-color: #9356DC;
-    }
-    .check__button {
-        display: none;
-        background-color: #99E2D0; 
-        width: 20%;
-        i{
-            color: white;
-            text-align: center;
-            width: 100%;
-            height: 100%;
+        align-items:center;
+        &:hover .check__button{
+            width: 20%;
+        }
+        &:hover .check__button i{
+            display: block;
         }
     }
-
+    &__txt{
+        padding: 0px 17px 0px 17px;  
+        flex-grow: 1;
+        margin-bottom: 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .menu__title{
+            margin: 0px;
+            padding-top: 17px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .menu__subtitle{
+            margin-top: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    &__price{
+        font-weight: 700;
+        margin-top: 25px;
+        padding-right: 20px;
+    }
+    .check__button {
+        background-color: #99E2D0; 
+        width: 0%;
+        height: 80px;
+        border-radius: 0px 20px 20px 0px;
+        position: relative;
+        transition: width 0.5s ease;
+        i{
+            position: absolute;
+            color: white;
+            display: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
     .entrees {
         opacity:0;
         -moz-animation: anim 1s linear forwards 0.5s;
@@ -145,7 +175,6 @@ a {
         -ms-animation: anim 1s linear forwards 0.5s;
         animation: anim 1s linear forwards 0.5s;
     }
-
     .plats {
         opacity:0;
         -moz-animation: anim 1s linear forwards 1.2s;
@@ -154,7 +183,6 @@ a {
         -ms-animation: anim 1s linear forwards 1.2s;
         animation: anim 1s linear forwards 1.2s;
     }
-
     .desserts {
         opacity:0;
         -moz-animation: anim 1s linear forwards 1.9s;
@@ -184,7 +212,6 @@ a {
     0%  {opacity:0;}
     100% {opacity:1;}
 }
-
     .button{
         display: flex;
         flex-direction: column; 
@@ -218,6 +245,32 @@ a {
     }
 }
 
+
+@media (max-width: 349px) {
+    .menu__txt h3 {
+      font-size: 15px;
+    }
+  }
+
+@media (max-width: 374px) {
+    .menu{
+        h1{
+            font-size: 23px;
+        }
+        .card__like2 {
+            left: 30px !important;
+        }
+    }
+}
+
+@media (min-width: 550px) {
+    .menu{
+        &__title__top{
+            text-align: center;
+        }
+    }
+}
+
 @media (min-width: 1024px) {
     .menu{
         padding: 2px 120px 40px 120px;
@@ -225,11 +278,6 @@ a {
         margin-right: 120px;
         border-radius: 40px 40px 0px 0px;
         margin-bottom: 0px;
-        &__title{
-            margin-top: 30px;
-            margin-left: 5px;
-            text-align: center;
-        }
         .button{
             &__commander{
                 padding: 15px 15px !important;
@@ -238,7 +286,6 @@ a {
         }
     }
 }
-
 
 
 /****** Footer ********/
@@ -271,7 +318,7 @@ a {
 }
 
 
-@media (min-width: 660px) {
+@media (min-width: 835px) {
     .footer{
         display: flex;
         flex-direction: row-reverse;

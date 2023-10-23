@@ -11,6 +11,9 @@ body {
 body h1 {
   font-size: 24px;
 }
+body h2 {
+  font-size: 17px;
+}
 body a {
   text-decoration: none;
   color: black;
@@ -102,9 +105,9 @@ body a {
   z-index: 3;
 }
 .navbar__logo .logo {
-  height: 32px;
-  margin-top: 18px;
-  margin-bottom: 7px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .navbar__location {
   background-color: #EAEAEA;
@@ -123,19 +126,19 @@ body a {
 /****** Presentation ********/
 .presentation {
   background-color: #F6F6F6;
-  padding: 25px 35px 65px 35px;
+  padding: 25px 35px 75px 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 25px;
+  gap: 30px;
 }
 .presentation__title {
   margin: 15px;
   font-weight: 900;
 }
-.presentation__title__text {
-  font-size: 18px;
+.presentation__text {
+  font-weight: 300;
 }
 .presentation__button {
   color: white;
@@ -186,7 +189,7 @@ body a {
   font-weight: bold;
   background-color: #F6F6F6;
   box-shadow: 0px 5px 13px -4px rgba(0, 0, 0, 0.2);
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   margin-left: 10px;
   position: relative;
 }
@@ -276,7 +279,7 @@ body a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 16px;
+  gap: 20px;
 }
 .restaurants__card {
   background-color: white;
@@ -330,25 +333,29 @@ body a {
 }
 .restaurants .card__content .card__like {
   position: relative;
-  cursor: pointer;
 }
 .restaurants .card__content .card__like .card__like1 {
   display: inline;
   margin-right: 20px;
   font-weight: bold;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  opacity: 1;
   background: linear-gradient(to bottom, #9356DC 10%, #FF79DA 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: -2;
 }
 .restaurants .card__content .card__like .card__like2 {
   position: relative;
-  left: 29px;
+  left: 28px;
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s ease;
+  background-color: white;
 }
-.restaurants .card__content .card__like .card__like1:hover {
-  opacity: 1;
+.restaurants .card__content .card__like .card__like2::before, .restaurants .card__content .card__like .card__like2::after {
+  background-color: white;
 }
 .restaurants .card__content .card__like .card__like2:hover {
   opacity: 0;
