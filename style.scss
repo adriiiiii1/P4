@@ -416,7 +416,6 @@ body {
         }
     }
 }
-    
 
 
 /****** Footer ********/
@@ -448,7 +447,7 @@ body {
 }
 
 
-@media (min-width: 660px) {
+@media (min-width: 835px) {
     .footer{
         display: flex;
         flex-direction: row-reverse;
@@ -463,5 +462,5 @@ body {
     .footer ul li {
       margin-left: 22px;
     }
-}
+  }
 

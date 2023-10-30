@@ -82,7 +82,7 @@ a {
             -webkit-text-fill-color: transparent;
             z-index: -2;
         }
-        .card__like2 {
+        .card__like2{
             margin-left: -10px;
             position: relative;
             left: 31px;
@@ -96,7 +96,7 @@ a {
             }
         }
 
-        .card__like2:hover {
+        .card__like2:hover{
             opacity: 0;
         }
     }
@@ -151,7 +151,7 @@ a {
         margin-top: 25px;
         padding-right: 20px;
     }
-    .check__button {
+    .check__button{
         background-color: #99E2D0; 
         width: 0%;
         height: 80px;
@@ -167,7 +167,7 @@ a {
             transform: translate(-50%, -50%);
         }
     }
-    .entrees {
+    .entrees{
         opacity:0;
         -moz-animation: anim 1s linear forwards 0.5s;
         -webkit-animation: anim 1s linear forwards 0.5s;
@@ -175,7 +175,7 @@ a {
         -ms-animation: anim 1s linear forwards 0.5s;
         animation: anim 1s linear forwards 0.5s;
     }
-    .plats {
+    .plats{
         opacity:0;
         -moz-animation: anim 1s linear forwards 1.2s;
         -webkit-animation: anim 1s linear forwards 1.2s;
@@ -183,7 +183,7 @@ a {
         -ms-animation: anim 1s linear forwards 1.2s;
         animation: anim 1s linear forwards 1.2s;
     }
-    .desserts {
+    .desserts{
         opacity:0;
         -moz-animation: anim 1s linear forwards 1.9s;
         -webkit-animation: anim 1s linear forwards 1.9s;
@@ -307,11 +307,11 @@ a {
         li{
             margin-bottom: 10px;
             a {
-            color: white;            
+                color: white;            
             }
             i{
-            padding-right: 10px;
-            width: 20px;
+                padding-right: 10px;
+                width: 20px;
             }
         }
     }

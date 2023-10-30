@@ -420,7 +420,7 @@ body a {
   width: 20px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 835px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
